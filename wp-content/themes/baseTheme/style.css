@@ -1,0 +1,62 @@
+/******************************************************************
+Theme Name: Age Friendly Portland
+Theme URI: 
+Description: 
+Author:
+Author URI: 
+Version: 1.1
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+******************************************************************/
+
+
+body {
+	background-image: url(imgs/bg.png);
+}
+
+h1, h2, h3 { color: #4a4a4a;}
+
+h1 {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+.nav {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	max-height: 100px;
+}
+
+.title-area { 
+	float: left;
+}
+
+.title-area h1 { border-bottom: none;}
+.menu { 
+	text-align: right;
+	margin-top: 30px;
+}
+
+.menu ul li {
+	display: inline;
+	margin-left: 30px;	
+}
+
+.menu li a {
+	color: #4a4a4a;
+	font-size: 24px;
+}
+
+.menu li a:hover { 
+	border-bottom: 5px solid #C43D3D;	
+}
+
+.contentContainer {
+	min-height:600px;
+}
+
+.footer {
+	background-color: #4a4a4a;
+	min-height:300px;
+}
