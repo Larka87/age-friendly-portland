@@ -27,16 +27,21 @@
 	
 
 	<body <?php body_class(); ?>>
-		
+		<div class="topBar">
+			<div class="row"> 
+				<p>text Size buttons go here</p>
+			</div>
+		</div>
 		<div class="nav">
 			<div class="row">
-				<div class="large-12 columns">
-					<ul class="title-area">
-						<li class="name"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1></li>
-						<li class="toggle-topbar menu-icon"><a href="#"><span>&nbsp;</span></a></li>
-					</ul>
-				
-	 				<?php wp_nav_menu() ?>
+				<div class="large-12 columns container">
+					<div class="site-logo">
+						<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+					</div>
+					
+					<div id="MainNavigation">
+	 					<?php wp_nav_menu(foundation_navigation); ?>
+	 				</div>
 	 			</div>
  			</div>		
  		</div>
