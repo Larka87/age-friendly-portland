@@ -5,7 +5,24 @@ add_editor_style("library/css/editor-styles.css"); // editor styles for tinymce
 // add_image_size( 'thumb-600', 600, 150, true );  // custom image size example
 
 
+// Enqueque Cycle 2 Jquery Slider Here
 
+function cycle2_enqueue_scripts(){
+	wp_enqueue_script(
+		'cycle2-slider',
+		get_stylesheet_directory_uri() . '/library/js/cycle2.min.js',
+		array(
+			'jquery'
+		),
+		null,
+		false
+
+	);
+}
+
+add_action('wp_enqueue_scripts','cycle2_enqueue_scripts');
+
+// End Enqueque
 
 
 /************* SIDEBARS ********************/

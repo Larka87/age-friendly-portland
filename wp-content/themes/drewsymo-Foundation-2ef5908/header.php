@@ -39,7 +39,7 @@
 			</ul>
 		</div>
 		<section class="top-bar-section">
-			<div class="row nav">
+			<div class="row nav menu">
 				<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'left', 'container' => '', 'fallback_cb' => 'foundation_page_menu', 'walker' => new foundation_navigation() ) ); ?>
 			</div>
 		</section>

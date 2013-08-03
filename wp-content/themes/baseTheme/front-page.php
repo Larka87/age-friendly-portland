@@ -9,24 +9,27 @@
 				<!-- This is temporary, needs be put in wordpress back-end -->
 				<div class="row">
 					<div class="large-4 columns">
-						<h3 class="homeTop">Around Portland</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et iaculis</p>
+						<p class="circle"><img src="<?php the_field('around_portland_image'); ?>" alt="" /></p>
+						<h3 class="homeTop"><?php the_field('around_portland_header'); ?></h3>
+						<p><?php the_field('around_portland_body'); ?></p>
 						<a href="#">Learn More</a>
 					</div>
 					
 					<div class="large-4 columns">
-						<h3 class="homeTop">Around Portland</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et iaculis</p>
+						<p class="circle"><img src="<?php the_field('around_portland_image'); ?>" alt="" /></p>
+						<h3 class="homeTop"><?php the_field('beyond_portland_header'); ?></h3>
+						<p><?php the_field('beyond_portland_body'); ?></p>
 						<a href="#">Learn More</a>
 					</div>
 					
 					<div class="large-4 columns">
-						<h3 class="homeTop">Around Portland</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et iaculis</p>
+						<p class="circle"><img src="<?php the_field('around_portland_image'); ?>" alt="" /></p>
+						<h3 class="homeTop"><?php the_field('get_connected'); ?></h3>
+						<p><?php the_field('get_connected_body'); ?></p>
 						<a href="#">Learn More</a>
 					</div>
 				</div>
-				<!----------- Temporary ________________>
+				<!----------- Temporary------------------>
 	
 			<?php endwhile; endif; ?>	
     	</div>
