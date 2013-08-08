@@ -48,7 +48,7 @@
 					</div>
 					
 					<div id="MainNavigation">
-						<a href="#" class="dropdown-toggle">Menu</a>
+						<a href="#" class="dropdown-toggle btn">Menu</a>
 							<div class="collapse">
 		 						<?php wp_nav_menu(foundation_navigation); ?>
 		 					</div>
