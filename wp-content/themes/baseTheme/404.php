@@ -5,7 +5,7 @@
 		
 			<h4>We're sorry, the page you requested cannot be found.</h4>
 			
-			<p><a href="javascript:history.back();" class="btn">Return to previous page</a></p>
+			<h4><a href="javascript:history.back();" class="btn">Return to previous page</a></h4>
 		</div>	
 	</div>			
 					

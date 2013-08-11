@@ -10,10 +10,10 @@ get_header(); ?>
 			
 			<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 			
-			<div class="large-3 columns" id="subNav">	
+			<div class="large-4 columns" id="subNav">	
 			<?php get_sidebar(); ?>
 			</div>
-			<div class="large-9 columns">
+			<div class="large-8 columns rightColumn">
 			<?php the_content(); ?>
 			</div>
 		
