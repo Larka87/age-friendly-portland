@@ -4,6 +4,15 @@
 			<div class="row">
 				<div class="large-4 columns">
 					<h2>Latest Article's</h2>
+					<?php
+					$args = array( 'post_type' => 'article', 'posts_per_page' => 3 );
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<h5><?php the_title(); ?> </h5>
+						<?php
+						
+					endwhile;
+					?>
 				</div>
 				<div class="large-4 columns">
 					<h2>Upcoming Events</h2>
