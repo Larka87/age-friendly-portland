@@ -22,6 +22,13 @@ function cycle2_enqueue_scripts(){
 
 add_action('wp_enqueue_scripts','cycle2_enqueue_scripts');
 
+// Change excerpt length
+
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 // End Enqueque
 
 

@@ -8,7 +8,9 @@
 					$args = array( 'post_type' => 'article', 'posts_per_page' => 3 );
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post(); ?>
-						<h5><?php the_title(); ?> </h5>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+							<h5><?php the_title(); ?> </h5>
+						</a>
 						<?php
 						
 					endwhile;

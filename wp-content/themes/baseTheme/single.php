@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-			
+<div id="wrapper">
+<div class="row contentContainer">	
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
 	
@@ -25,7 +25,8 @@
 <?php endif; ?>
 	
 
-<?php get_sidebar(); // sidebar 1 ?>
+<?php get_sidebar();  ?>
 
-
+</div>
+</div>
 <?php get_footer(); ?>

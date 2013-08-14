@@ -52,7 +52,7 @@
             
        <?php  else : // no comments and comments are closed ?>
 
-	<p>Comments are closed.</p>
+	<!--<p>Comments are closed.</p>-->
 
 	<?php endif; ?>
 
