@@ -5,17 +5,17 @@ Age Friendly Portland To Do List:
 -Contact Page 
 Content is in. Needs Style and the contact form. I looked at using Contact form 7, but it's up to whoever is doing it.)  
 :: edit ::
-The ACF now has a Content Form 7 addon that works with the plugin, the issue we are facing is that the pathing within the function.php file doesn't want to direct the file to the correct place.
+Added ACF Content Form 7 for easy form access and editing, now it just needs to be styled.
 
 -Text size buttons implementation and styles.
 :: edit :: 
-Have the text resizer entered and is working however the surrounding bar needs to be adjusted to react to font resizing, we should also consider implimenting a max & min size.
+Have the text resizer entered and is working however the surrounding bar needs to be adjusted to react to font resizing.
 
 
 -Events Page 
 Who ever works on this don’t worry that they haven’t given us any events. Just create some fake test events so we can get the styles down and show them how it will work.
 :: edit ::
-Added an easy to update events page, just have to make the plugin work correctly within the footer.
+Added an easy to update events page, needs to be styled and altered to fit within the footer.
 
 
 -Tools page
