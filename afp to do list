@@ -11,6 +11,8 @@ Added ACF Content Form 7 for easy form access and editing, now it just needs to 
 :: edit :: 
 Have the text resizer entered and is working however the surrounding bar needs to be adjusted to react to font resizing.
 
+-Programs Page
+What programs do they want listed and how do they want them displayed?
 
 -Events Page 
 Who ever works on this don’t worry that they haven’t given us any events. Just create some fake test events so we can get the styles down and show them how it will work.
@@ -22,6 +24,8 @@ Added an easy to update events page, needs to be styled and altered to fit withi
 
 -Input Advisory Committee
 I believe this will be going under Partner Information. I emailed her to confirm though. Contact Chris before working on this.
+:: edit ::
+Do we want to use a content slider or put them all on a single scrolling page?
 
 - Footer’s Article and Events
 
