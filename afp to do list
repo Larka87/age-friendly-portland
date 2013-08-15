@@ -9,7 +9,7 @@ The ACF now has a Content Form 7 addon that works with the plugin, the issue we 
 
 -Text size buttons implementation and styles.
 :: edit :: 
-Have the text resizer entered, we now need to get it to align right and the surrounding bar to react to font resizing.
+Have the text resizer entered and is working however the surrounding bar needs to be adjusted to react to font resizing.
 
 
 -Events Page 
