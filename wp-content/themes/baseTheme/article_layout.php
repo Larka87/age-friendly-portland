@@ -27,7 +27,7 @@ get_header(); ?>
 					the_excerpt() ;
 					echo '</div>';
 				endwhile;
-				?>
+				?>	
 		</div>
 
 		

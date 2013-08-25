@@ -37,7 +37,7 @@
 	<body <?php body_class(); ?>>
 		<div class="topBar">
 			<div class="row"> 
-				<p>text Size buttons go here</p>
+				<p><?php if(function_exists('fontResizer_place')) { fontResizer_place(); } ?></p>
 			</div>
 		</div>
 		<nav class="nav">

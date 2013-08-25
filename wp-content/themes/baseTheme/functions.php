@@ -162,3 +162,15 @@ function grav_wpsearch($form) {
     </form>';
     return $form;
 } 
+
+
+
+/************ Contact Form 7 **********************/
+
+// Contact Form
+add_action('acf/register_fields', 'my_register_fields');
+
+function my_register_fields()
+{
+    include_once('acf-cf7/acf-cf7.php');
+}

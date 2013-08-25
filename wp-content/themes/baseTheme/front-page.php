@@ -49,7 +49,7 @@
 							<h3 class="homeTop"><?php the_field('get_connected'); ?></h3>
 							<p><?php the_field('get_connected_body'); ?></p>
 							<a href="#">Learn More</a>
-						</div>
+						</div>						
 					</div>
 		
 				<?php endwhile; endif; ?>	

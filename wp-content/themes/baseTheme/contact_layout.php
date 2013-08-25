@@ -18,7 +18,8 @@ get_header(); ?>
 			<p><?php the_field('contact_page_additional_information_body'); ?></p>
 			</div>
 			<div class="large-6 columns rightColumn">
-			<?php the_content(); ?>
+			<p><?php the_field('contact_page_form'); ?></p>
+			<?php the_content(''); ?>
 			</div>
 		
 		<?php endwhile; endif; ?>	
