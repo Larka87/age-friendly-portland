@@ -2,7 +2,7 @@
 Theme Name: Age Friendly Portland
 Theme URI: 
 Description: 
-Author:
+Author: Jameson, Sarah, and Chris
 Author URI: 
 Version: 1.1
 
@@ -22,7 +22,7 @@ body {
 		padding-right: 20px;
 	}
 }
-h1, h2, h3, h4 { 
+h1, h2, h3, h4,h6 { 
 	color: #4a4a4a;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -34,8 +34,15 @@ h1, h2, h3, h4 {
 	text-align: center;
 }
 
-.headContact{ border-bottom: 5px solid #C43D3D; }
+
+.headContact{ 
+	border-bottom: 5px solid #C43D3D; 
+	padding-bottom: 10px;
+}
+
 h4 { margin-bottom: 30px;}
+
+h3{font-weight:400;}
 
 p {
 	margin-bottom: .6em;
@@ -45,6 +52,8 @@ p {
 	font-family: Georgia, serif;
 	margin-bottom: 20px;
 }
+
+
 a { 
 	color: #C43D3D; 
 	font-size: 14px;
@@ -77,6 +86,28 @@ a:hover { color: #4a4a4a;}
  }
  
  .btn:hover {
+ 	background-color: #bd3434;
+ 	color: #fff;
+ }
+ 
+  .btn-2  {
+ 	padding: 10px 20px;
+ 	color: #fff;
+ 	background-color: #C43D3D;
+ 	text-decoration: none;
+ 	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	font-size: 18px;
+	font-weight: bold;
+	-webkit-box-shadow: 0px 0px 1px #4a1717;
+	-moz-box-shadow: 0px 0px 1px #4a1717;
+	box-shadow: 0px 0px 1px #4a1717;
+	border-bottom: 2px solid #ab2e2e;
+	text-shadow: 1px 1px #ab2e2e;
+ }
+ 
+ .btn-2:hover {
  	background-color: #bd3434;
  	color: #fff;
  }
@@ -145,6 +176,18 @@ a:hover { color: #4a4a4a;}
 	.cycle-slideshow img {
 		max-height: 100%;	
 	}
+
+	.cycle-slideshow, #slideshow{
+		display:none;
+	}
+	
+	 .btn-2{
+		width:100%;
+		
+	 }
+	 
+	 .homeHeader { border:none;}
+	 
 }
 
 #adv-custom-caption {
@@ -152,10 +195,56 @@ a:hover { color: #4a4a4a;}
 	bottom:0;
 	width: 100%;
 	z-index: 500;
-	background: #000;
+	background: #222222;
 	color: #fff;
-	padding:20px;
-	opacity: 0.7;
+	padding:10px;
+	opacity:0.9;
+}
+
+#slideshow {
+	padding: 5px;
+	background: #fff;
+	box-shadow: 0 0 1px #aaa;
+}
+.cycle-slideshow p{
+	opacity: 1;
+	font-weight:700;
+	color:#ffffff;
+	line-height: 1.5em;
+}
+
+.cycle-slideshow a{
+	padding-left:10px;
+	font-style:italic;
+}
+
+#next, #prev {
+	position: absolute;
+	top: 130px;
+	z-index: 500;
+	font-size: 48px;
+	color: #fff;
+	text-decoration: none;
+}
+#next { right: 20px; }
+#prev { left: 20px; }
+
+span.slider-header{
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	line-height: 1.5em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#slideshow p {
+	margin: 0;
+	font-weight: lighter;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.3em;
 }
 
 .dropdown-toggle { display: none; }
@@ -202,10 +291,13 @@ a:hover { color: #4a4a4a;}
 		border-bottom: 5px solid #C43D3D;
 		padding-bottom: 21px;
 	}
+	
 }
 .children { display: none !important;}
 @media(max-width:980px) {
-	.menu ul li a { font-size: 18px;}
+	.menu ul li a { 
+		font-size: 18px;
+	}
 }
 @media(max-width: 767px) {
 	#MainNavigation { margin-bottom: 35px; }
@@ -230,9 +322,14 @@ a:hover { color: #4a4a4a;}
 	.menu ul li a {
 		width: 100%;
 		color: #fff;
+		display: block;
 		padding-bottom: 0;
 		font-size: 18px;
 	}
+	
+	.menu li a { border-bottom: none;}
+	.menu li a:hover { border-bottom: none; }
+	
 	.dropdown-toggle {
 		position: absolute;
 		right: 20px;
@@ -245,6 +342,18 @@ a:hover { color: #4a4a4a;}
 	.collapse { 
 		display: none; 
 		clear: both;
+	}
+	
+	a.articles-a { 
+		text-align:center;
+		font-size: 14px;
+	}
+	
+		
+	.advisory-grid {  
+		float:none !important;
+		display:block !important;
+		width:100% !important;
 	}
 
 }
@@ -322,28 +431,41 @@ a:hover { color: #4a4a4a;}
 }
 @media(min-width:767px) {
 	.rightColumn { padding-left: 30px;}
+	
 }
-
+@media(min-width: 550px) {
+	.homeHeader { margin-top: 40px; }
+}
 .circle { 
 	text-align: center;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	border-radius: 150px;
-}
-.circle img {
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-	width: 180px;
-	height:180px;
-	border: 3px solid #4a4a4a;
-}
 
+}
+.homePageImages { text-align: center; }
+.homePageImages img {
+	padding: 3px;
+	background: #fff;
+	box-shadow: 0 0 1px #888;	
+	margin: 0 auto;
+}
+/*--------------Article Page ------------------*/
 #article { margin-top: -10px;}
 #article a { text-decoration: none;}
 .entry-content { border-bottom: 1px solid #ccc; }
 
 .entry-content:last-child { border-bottom: none;}
+
+.post-categories a {
+	padding: 5px 10px;
+	background: #C43D3D;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 1px #aaa;
+}
+
+.post-categories a:hover { background-color: #4a4a4a; }
+
+.post-categories li { display: inline; }
+
 
 /*********************************/
 .footer {
@@ -378,26 +500,19 @@ a:hover { color: #4a4a4a;}
 	text-align: center;
 }
 
-.footer li:hover {
+.social li:hover {
 	background:  #C43D3D;  	
 }	
 
-.facebook li, .facebook li:hover {
-	background-image: url(imgs/facebook.png);
-	background-repeat: no-repeat;
-	background-position: 60px 5px;
+p.phone{
+	margin-top:-15px;
 }
 
-.twitter li, .twitter li:hover {
-	background-image: url(imgs/twitter.png);
-	background-repeat: no-repeat;
-	background-position: 60px 5px;
-}
-
-.linked li, .linked li:hover {
-	background-image: url(imgs/linkedin.png);
-	background-repeat: no-repeat;
-	background-position: 60px 5px;
+b {
+	float: left;
+	margin-left: 30px;
+	font-size: 24px;
+	line-height:0;
 }
 
 .copywrite {
@@ -408,6 +523,31 @@ a:hover { color: #4a4a4a;}
 	font-family: 'Raleway', sans-serif !important;
 }
 
+a.articles-a { 
+	color: #ffffff; 
+	font-size: 16px;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight:600;
+	margin-bottom:30px;
+	display:block;
+	line-height: 1.4em;
+}
+
+a.articles-a:hover { 
+	color: #C43D3D;
+	text-decoration:underline;
+}
+	
+#article h3 {
+	text-decoration: underline;
+}
+
+#article h3:hover { color: #C43D3D; }
+.locate-us p{
+	color:#ffffff;
+
+}
 
 /*-----------------Contact Page------------------*/
 .wpcf7-submit{
@@ -442,6 +582,9 @@ border:none;
 
 }
 
+input[type="text"], input[type="email"] { padding: 25px 10px; }
+
+textarea { min-height: 100px !important;}
 
 .wpcf7-validation-errors {
 border: 2px solid #6D6C68;
@@ -455,10 +598,146 @@ li.fontResizer{
 	text-decoration:none;
 	position:relative;
 	bottom:10px;
+	padding-right: 20px;
 
 }
 
-li.fontResizer a{
+li.fontResizer a {
 	text-decoration:none;
-
+	margin-left: 5px;
 }
+
+li.fontResizer a:hover, .locate-us a:hover { color: #fff; }
+
+
+/*---------------------Events Page-------------------*/
+.subsubsub {
+	background-color: #4a4a4a;
+	padding: 15px;
+	color: #fff;
+	margin-bottom: -20px;
+	border-radius: 5px;
+	
+}
+
+.subsubsub a{
+	font-size:16px;
+}
+
+.subsubsub a:hover { color: #fff; }
+
+.event-list h2 { display: none; }
+
+.event { 
+	padding: 30px 0;
+}
+
+.event-details {
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 20px;
+}
+
+.event-info.single-day { margin-left: 90px; }
+
+.event a { font-size: 24px; }
+
+.event h3 {
+	margin-top: -10px;
+	margin-bottom: 0;
+}
+.event-date {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 1px  #aaa;	
+	padding:0;
+	
+}
+
+.event-weekday {
+	background-color: #4a4a4a;	
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-weight: bold;
+	color:#fff;
+}
+
+.event-day {
+	font-size: 2.5em !important;
+	line-height: 1.3em !important;
+	color: #c83b41;
+	margin-top: -10px;
+}
+
+.event-year { display: none; }
+
+.event-details { 
+	float:left;
+	font-family: Georgia, serif;
+	}
+	
+	
+/*--------------Advisory Page ----------------*/
+
+
+.advisory-grid{
+	position: relative;
+    width: 44.999%;
+	float: left;
+	padding-right:20px;
+}
+
+h3#advisory-border{
+	border-bottom: 1px solid #ccc; 
+	padding: 30px 0;
+}
+
+
+/*--------------Tools Page ----------------*/
+
+.tools-links{
+	display:block;
+	line-height:24px;
+	font-family: Georgia, serif;
+}
+
+
+/*---------------Pagination----------------------*/
+.prev-posts b, .next-posts b {
+	font-size: 48px;
+	text-align: center;
+	margin-top: 15px;
+	margin-left:0;
+	margin-right: 20px;
+}
+
+/*--------------------Font Icons ----------------*/
+
+.arrow-right-icon:before, .facebook-icon:before, .twitter-icon:before, .linkedin-icon:before, .arrow-left-icon:before  {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.facebook-icon:before {
+	content: "\e002";
+}
+.twitter-icon:before {
+	content: "\e001";
+}
+.linkedin-icon:before {
+	content: "\e004";
+}
+.arrow-right-icon:before {
+	content: "\e000";
+	text-shadow: 0 0 1px #888;
+}
+.arrow-left-icon:before {
+	content: "\e003";
+	text-shadow: 0 0 1px #888;
+}
+

@@ -11,12 +11,14 @@
 		<!--<meta name="viewport" content="width=device-width">-->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="application-name" content="<?php bloginfo('name'); ?>" />
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/imgs/favicon.ico">
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   		
   		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/library/css/master.css" />
   		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/library/css/foundation.css" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/stylesheet-icons.css" />
+
 		<!-- LOAD SCRIPTS -->
 		<script src="<?php bloginfo('template_url');?>/library/js/libs/jquery.js"></script>
 		<script src="<?php bloginfo('template_url');?>/library/js/foundation.min.js"></script>
@@ -37,7 +39,7 @@
 	<body <?php body_class(); ?>>
 		<div class="topBar">
 			<div class="row"> 
-				<p><?php if(function_exists('fontResizer_place')) { fontResizer_place(); } ?></p>
+					<p><?php if(function_exists('fontResizer_place')) { fontResizer_place(); } ?></p>
 			</div>
 		</div>
 		<nav class="nav">

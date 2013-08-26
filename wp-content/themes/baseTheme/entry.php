@@ -11,10 +11,10 @@
         
     </h3>
     
-    
+    <?php the_category(); ?>
     <p class="meta">
     
-        <em><span>Posted On: <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> </span></em>
+        <!--<em><span>Posted On: <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> </span></em>-->
         
         <!--<span>Filed Under: <?php the_category(', '); ?></span>-->
         
@@ -34,7 +34,7 @@
     
     </div>
     
-    <a href="http://afp.cellar-door-designs.com/resources/articles/" class="btn">All Articles</a>
+    <a href="http://afp.cellar-door-designs.com/resources/articles/" class="btn-2">All Articles</a>
     
     <p class="tags"><?php the_tags('<span class="tags">Tags:</span> ', ', ', ''); ?></p>
     

@@ -29,8 +29,9 @@ function afp_custom_post_article() {
 		'description'   => 'Holds our Articles and articles specific data',
 		'public'        => true,
 		'menu_position' => 5,
-		'supports'      => array( 'title', 'editor', 'excerpt'),
+		'supports'      => array( 'title', 'editor'),
 		'has_archive'   => true,
+		'taxonomies' => array('category')
 	);
 	register_post_type( 'article', $args );	
 }
