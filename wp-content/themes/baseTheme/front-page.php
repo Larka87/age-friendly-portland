@@ -28,7 +28,8 @@
 		 
 										<?php while(has_sub_field('age_friendly_portland_home_page_slider_field')): ?>
 											
-								   	 	<img src="<?php the_sub_field('home_page_slider_image'); ?>" data-cycle-title="<span class='slider-header'><?php the_sub_field('home_page_slider_header'); ?></span><p><?php the_sub_field('home_page_slider_text'); ?><a href='<?php the_sub_field('home_page_slider_link');?>'>Read More</a></p>" />
+										<?php $slider_image = get_sub_field('home_page_slider_image'); ?>
+								   	 	<img src="<?php echo $slider_image['sizes']['homepage-slider']; ?>" data-cycle-title="<span class='slider-header'><?php the_sub_field('home_page_slider_header'); ?></span><p><?php the_sub_field('home_page_slider_text'); ?><a href='<?php the_sub_field('home_page_slider_link');?>'>Read More</a></p>" />
 							   	 	
 							   	 		<?php endwhile; ?>
 							   	 		
@@ -51,7 +52,7 @@
 							
 							<p><?php the_field('around_portland_body'); ?></p>
 							
-							<a href="http://afp.cellar-door-designs.com/get-involved/events/">Learn More</a>
+							<a href="http://afp.cellar-door-designs.com/about/background-information/">Learn More</a>
 						</div>
 						
 						<div class="large-4 columns">
@@ -64,7 +65,7 @@
 							
 							<p><?php the_field('beyond_portland_body'); ?></p>
 							
-							<a href="http://afp.cellar-door-designs.com/get-involved/events/">Learn More</a>
+							<a href="http://afp.cellar-door-designs.com/resources/articles/">Learn More</a>
 						</div>
 						
 						<div class="large-4 columns">
@@ -76,7 +77,7 @@
 							
 							<p><?php the_field('get_connected_body'); ?></p>
 							
-							<a href="#">Learn More</a>
+							<a href="http://afp.cellar-door-designs.com/get-involved/events/">Learn More</a>
 							
 						</div>
 												

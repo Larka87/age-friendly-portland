@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Partner Layout
-*/
 get_header(); ?>
 
 <div id="wrapper">

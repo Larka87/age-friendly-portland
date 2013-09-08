@@ -42,7 +42,7 @@ h1, h2, h3, h4,h6 {
 
 h4 { margin-bottom: 30px;}
 
-h3{font-weight:400;}
+h3 {font-weight:400;}
 
 p {
 	margin-bottom: .6em;
@@ -125,13 +125,17 @@ a:hover { color: #4a4a4a;}
 .site-logo h1 a { 
 	border-bottom: none;
 	padding-right:20px;
-	background-image: url(imgs/logo.png);
+	background-image: url(imgs/logo2.png);
 	background-repeat: no-repeat;
  	background-position: 0 0;
 	display: inline-block;
 	text-indent: -9999em;
 	width: 250px;
-	height:75px;
+	height:85px;
+	margin-left: -30px;
+	position: relative;
+	bottom: 10px;
+
 }
 
 .site-logo a {font-size: 24px; }
@@ -142,6 +146,8 @@ a:hover { color: #4a4a4a;}
 		width: 175px;
 		height:50px;
 		margin-top: 10px;
+		margin-left: 0;
+		bottom: 0;
 	}
 }
 
@@ -549,12 +555,31 @@ a.articles-a:hover {
 
 }
 
+.post-content li {
+	font-family: gerogria, serif;
+	color: #666;
+	line-height: 0.9em;
+	list-style-type: circle;
+}
+
+.post-categories a{
+	text-decoration: none !important;
+}
+
+#title a { color: #666; }
+
+.cat { 
+	margin-bottom: 10px;
+	padding: 5px 0;
+	font-size: 12px; 
+}
+
+
 /*-----------------Contact Page------------------*/
 .wpcf7-submit{
 border:none;
 
 }
-
 
 .wpcf7 input[type="submit"]{
     padding: 10px 20px;
@@ -574,6 +599,10 @@ border:none;
 	text-shadow: 1px 1px #ab2e2e;
 }
 
+.wpcf7 input[type="submit"]:hover { 
+	background-color: #bd3434;
+	cursor: pointer;
+}
 .wpcf7 p.contact-title{
 	color: #4a4a4a;
 	font-family: 'Raleway', sans-serif;
@@ -650,8 +679,14 @@ li.fontResizer a:hover, .locate-us a:hover { color: #fff; }
 	border-radius: 5px;
 	box-shadow: 0px 0px 1px  #aaa;	
 	padding:0;
-	
+	width: 50px;
 }
+.event-list .end-date { 
+	margin-left: 0 !important; 
+	width: 2.9em !important;
+}
+
+.multi-day { margin-left: 90px !important; }
 
 .event-weekday {
 	background-color: #4a4a4a;	

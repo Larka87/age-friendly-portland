@@ -31,8 +31,38 @@ function afp_custom_post_article() {
 		'menu_position' => 5,
 		'supports'      => array( 'title', 'editor'),
 		'has_archive'   => true,
-		'taxonomies' => array('category')
+		'taxonomies' => array('article_category')
 	);
 	register_post_type( 'article', $args );	
+	
+	// Add new taxonomy, NOT hierarchical (like tags)
+	
+	$labels = array(
+		'name'              => _x( 'Article Categories', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Article Category', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search Article Categories' ),
+		'all_items'         => __( 'All Article Categories' ),
+		'parent_item'       => __( 'Parent Article Category' ),
+		'parent_item_colon' => __( 'Parent Article Categories:' ),
+		'edit_item'         => __( 'Edit Article Category' ),
+		'update_item'       => __( 'Update Article Category' ),
+		'add_new_item'      => __( 'Add New Article Category' ),
+		'new_item_name'     => __( 'New Article Category Name' ),
+		'menu_name'         => __( 'Article Categories' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'resources/article/category' ),
+	);
+
+	register_taxonomy( 'article_category', 'article', $args );
+	
+	
 }
 add_action( 'init', 'afp_custom_post_article' );
+

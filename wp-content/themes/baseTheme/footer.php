@@ -5,7 +5,7 @@
 				<div class="large-4 columns">
 					<h2>Latest Articles</h2>
 					<?php
-					$args = array( 'post_type' => 'article', 'posts_per_page' => 3 );
+					$args = array( 'post_type' => 'article', 'posts_per_page' => 2 );
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post(); ?>
 						<a href="<?php the_permalink() ?>" class= "articles-a" rel="bookmark" title="<?php the_title_attribute(); ?>">

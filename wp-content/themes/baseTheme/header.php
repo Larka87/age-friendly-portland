@@ -11,7 +11,7 @@
 		<!--<meta name="viewport" content="width=device-width">-->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="application-name" content="<?php bloginfo('name'); ?>" />
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/imgs/favicon.ico">
+		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/imgs/favicon1.ico">
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   		
   		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/library/css/master.css" />

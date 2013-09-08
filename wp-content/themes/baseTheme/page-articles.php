@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Article Layout
-*/
 get_header(); ?>
 
 <div id="wrapper">
@@ -32,13 +29,18 @@ get_header(); ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 	
 					<h3><?php the_title(); ?> </h3>
+					
 				</a>
-				<?php the_category(); ?>
+				<!--<div class="cat"><?php the_category(); ?></div>-->
+				
+				<div class="cat">
+					<?php the_taxonomies(); ?>
+				</div>
 				<?php
 				
 				echo '<div class="entry-content">';
 				
-				the_excerpt() ;
+				the_excerpt();
 			
 				echo '</div>';
 				
