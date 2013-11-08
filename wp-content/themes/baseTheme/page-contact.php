@@ -14,9 +14,6 @@
 				
 				<p><?php the_field('contact_page_additional_information_body'); ?></p>
 				
-				<h3 class="headContact"><?php the_field('contact_page_beyond_portland_header'); ?></h3>
-				
-				<p><?php the_field('contact_page_beyond_portland_body'); ?></p>
 			
 			</div>
 			

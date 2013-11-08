@@ -291,6 +291,10 @@ span.slider-header{
   	transition:border-bottom .1s ease-out;	
 }
 
+/* Hides Beyond Portland */
+.page_item.page-item-177, .page_item.page-item-177.current_page_item {
+	display: none;
+}
 @media(min-width:767px) {
 	.menu li a:active, .menu .current_page_item a {
 		color: #C43D3D;
@@ -505,7 +509,13 @@ span.slider-header{
 	color: #fff;
 	text-align: center;
 }
-
+.articleFoot .articles-a { 
+	margin-bottom: 0;
+	text-decoration: underline;
+	color: #C43D3D;
+}
+.articleFoot .articles-a:hover { color:#fff;}
+.articleFoot p { color: #fff; }
 .social li:hover {
 	background:  #C43D3D;  	
 }	
@@ -513,7 +523,14 @@ span.slider-header{
 p.phone{
 	margin-top:-15px;
 }
-
+.phone .email { width: 100%;}
+.locate-us { 
+	text-align: center; 
+	width: 100%;
+}
+.locate-us .btn {
+	display:block;
+}
 b {
 	float: left;
 	margin-left: 30px;
@@ -552,9 +569,11 @@ a.articles-a:hover {
 #article h3:hover { color: #C43D3D; }
 .locate-us p{
 	color:#ffffff;
-
+	margin-left: -20px;
+	margin-bottom: 25px;
 }
 
+.map { margin-left: -15px; }
 .post-content li {
 	font-family: gerogria, serif;
 	color: #666;
@@ -683,7 +702,7 @@ li.fontResizer a:hover, .locate-us a:hover { color: #fff; }
 }
 .event-list .end-date { 
 	margin-left: 0 !important; 
-	width: 2.9em !important;
+	width: 3.1em !important;
 }
 
 .multi-day { margin-left: 90px !important; }

@@ -15,7 +15,7 @@
 							
 							<div class="cycle-slideshow" 
 							    data-cycle-fx=scrollHorz
-							    data-cycle-timeout=7000
+							    data-cycle-timeout=9000
 							    data-cycle-caption="#adv-custom-caption"
 							    data-cycle-caption-template="{{cycleTitle}}"
 							    data-cycle-prev="#prev"
@@ -65,7 +65,7 @@
 							
 							<p><?php the_field('beyond_portland_body'); ?></p>
 							
-							<a href="http://afp.cellar-door-designs.com/resources/articles/">Learn More</a>
+							<a href="http://afp.cellar-door-designs.com/resources/beyond-portland/">Learn More</a>
 						</div>
 						
 						<div class="large-4 columns">

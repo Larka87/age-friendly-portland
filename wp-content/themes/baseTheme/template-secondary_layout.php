@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 			</div>
 			<div class="large-8 columns rightColumn">
-			<?php 
+			<!--<?php 
 			if(is_page('Tools')){
 			
 				if(get_field('age_friendly_portland_tools_page_field')):
@@ -30,10 +30,10 @@ get_header(); ?>
 							   	 	endif; 
 				
 			} else {
-			the_content(); 
+			 the_content(); 
 			}
 			
-			?>
+			?>-->
 			<?php 
 			if(is_page('Programs')){
 			
@@ -53,10 +53,15 @@ get_header(); ?>
 							   	 	endif; 
 				
 			} else {
-			//the_content(); 
+			the_content();  
 			}
 			
 			?>
+			
+			
+			
+			
+			
 			
 			</div>
 		
